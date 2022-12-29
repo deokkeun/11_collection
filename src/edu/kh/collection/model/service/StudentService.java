@@ -47,8 +47,6 @@ public class StudentService {
 	public void ex() {
 		// List 테스트
 		
-		//Object e = "문자문자";
-		//Object e = new Object();
 		
 		// List.add(Object e) : 리스트에 객체를 추가
 		// * 매개변수 타입이 Object == 모든 객체를 매개변수로 전달 할 수 있음
