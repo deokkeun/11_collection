@@ -14,7 +14,7 @@ public class MapService {
 	
 	// - Key를 모아두면 Set의 특징(중복 X)
 	// - Value를 모아두면 List의 특징(중복 O)
-	
+
 	
 	public void ex1() {
 		
@@ -131,7 +131,6 @@ public class MapService {
 			map.put("id", "user0" + i);
 			map.put("pw", "pass0" + i);
 			
-			
 			// Map을 List에 추가
 			list.add(map);
 		}
@@ -144,12 +143,7 @@ public class MapService {
 		
 		for(Map<String, Object> temp : list) {
 			System.out.println(temp.get("id"));
-			
-			
 		}
-		
-		
-		
 	
 	}
 	

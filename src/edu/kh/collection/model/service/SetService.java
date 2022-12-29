@@ -2,6 +2,7 @@ package edu.kh.collection.model.service;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -245,13 +246,13 @@ public class SetService {
 		
 		// 로또 번호 생성기 Ver2
 		
-		// HashSet // 순서유지X, 중복제거만
-		// LinkdeHashSet // 순서 유지 Set
-		// TreeSet (오름차순) // 자동 정렬 Set
+		// HashSet // 순서유지X, 중복 제거
+		// LinkdeHashSet // 순서 유지 Set -> 객체를 연결해 배열형태처럼 주소값 연결, 중복 제거
+		// TreeSet (오름차순) // 자동 정렬 Set -> 트리 형태 자료구조 순서로 정렬, 중복 제거
 		
 		// Set<Integer> lotto = new HashSet<Integer>(); // 순서유지X, 중복제거만
-		// Set<Integer> lotto = new LinkedHashSet<Integer>(); // 순서 유지 Set
-		Set<Integer> lotto = new TreeSet<Integer>(); // 자동 정렬 Set
+		Set<Integer> lotto = new LinkedHashSet<Integer>(); // 순서 유지 Set
+		//Set<Integer> lotto = new TreeSet<Integer>(); // 자동 정렬 Set
 		
 		// Integer는 equals(), hashCode() 오버라이딩 완료 상태
 		
@@ -268,18 +269,6 @@ public class SetService {
 		}
 		
 		System.out.println("로또 번호 : " + lotto);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		
